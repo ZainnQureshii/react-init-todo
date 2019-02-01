@@ -1,0 +1,85 @@
+body {
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container{
+  margin-top: 50px !important;
+  background-color: #fff;
+  padding: 20px 30px;
+  min-height: 600px;
+  width: 60%;
+  display: block;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s ease-in-out all;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5),
+              0px -15px 1px -5px #858585,
+              0px -38px 1px -20px #3F3F3F,
+              0px -62px 1px -35px #858585
+              
+  
+  /* box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.5); */
+  
+}
+
+.container:hover{
+  font-size: 1.2rem;
+  padding: 30px 40px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5),
+              0px 15px 1px -5px #858585,
+              0px 30px 1px -12px #3F3F3F,
+              0px 45px 1px -19px #858585
+}
+
+
+.todoItems{
+  padding: 10px 15px;
+  border-bottom: 1px solid #000;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  animation: 1s;
+  
+}
+
+.task{
+  color: #888;
+}
+
+.loading{
+  background-color: #999;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  transition: 1.5s ease-in-out;
+  animation: nudge 2s linear infinite alternate;
+}
+
+@keyframes nudge {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  
+  100% {
+    transform: translate(100%, 0);
+  }
+  
+  
+}
